@@ -1,0 +1,25 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--border-color);
+    margin: 0 auto;
+}
+
+th, td {
+    padding: var(--input-padding);
+    border: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--primary-bg-color);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: var(--hover-bg-color);
+    color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}

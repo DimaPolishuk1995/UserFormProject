@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { setUserData } from '../store/actions/userActions';
+import { addUserToList } from '../store/actions/userActions';
 
 const useFormActions = (formData, validateForm, resetFormData) => {
     const dispatch = useDispatch();
@@ -7,7 +7,7 @@ const useFormActions = (formData, validateForm, resetFormData) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validateForm()) {
-            dispatch(setUserData(formData));
+            dispatch(addUserToList(formData));
             alert("Data saved successfully!");
             resetFormData();
         }

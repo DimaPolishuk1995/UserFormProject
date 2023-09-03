@@ -1,10 +1,11 @@
 const initialState = {
-    user: {
+    userData: {
         firstName: '',
         lastName: '',
         email: '',
         message: ''
-    }
-};
+    },
+    userList: []
+}
 
 export default initialState;

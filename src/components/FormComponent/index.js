@@ -24,7 +24,7 @@ const formFields = [
 ];
 
 const FormComponent = () => {
-    const formInitialState = initialState.user;
+    const formInitialState = initialState.userData;
 
     const {
         formData,

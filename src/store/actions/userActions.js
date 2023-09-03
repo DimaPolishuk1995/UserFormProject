@@ -1,6 +1,6 @@
-import { SET_USER_DATA } from './actionTypes';
+import { ADD_USER_TO_LIST } from './actionTypes';
 
-export const setUserData = (userData) => ({
-    type: SET_USER_DATA,
-    payload: userData
+export const addUserToList = (user) => ({
+    type: ADD_USER_TO_LIST,
+    payload: user
 });
