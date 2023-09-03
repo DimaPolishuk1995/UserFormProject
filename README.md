@@ -1,18 +1,41 @@
+# user-form-project
+
 # Description
 
 The project aims to create an interface where users can input their personal details, including their first name, last name, email, and a message. The project employs React for frontend development, Redux for centralized state management, and the Validator library to ensure the integrity of the data being collected. Once submitted, the data is stored in the Redux store and can be displayed back to the user, making it a foundational example of a data collection and display mechanism using modern web development tools.
 
+## Installation & Local Setup
+
+Before diving into the application, ensure you have `Node.js` and `npm` (Node Package Manager) installed on your computer. If not, download and install them from [Node.js official website](https://nodejs.org/).
+
+**1. Clone the repository to your local machine:**
+   ```bash
+   git clone https://github.com/DimaPolishuk1995/user-form-project.git
+   ```
+
+**2. Navigate to the project directory:**
+   ```bash
+   cd user-form-project
+   ```
+
+**3. Install the necessary dependencies:**
+   ```bash
+   npm install
+   ```
+
+**4. Run the application in development mode:**
+   ```bash
+   npm start
+   
+   Runs the app in the development mode.\
+   Open http://localhost:3000 to view it in your browser.
+
+   The page will reload when you make changes.\
+   You may also see any lint errors in the console.
+ 
+   ```
+
 ## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 ### `npm test`
 
