@@ -8,6 +8,8 @@ const userReducer = (state = initialState.user, action) => {
                 ...state,
                 ...action.payload
             };
+        case 'PLACEHOLDER_CASE':
+            return state;
         default:
             return state;
     }

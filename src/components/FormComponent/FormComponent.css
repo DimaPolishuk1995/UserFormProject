@@ -1,0 +1,61 @@
+:root {
+    --form-bg-color: #007BFF;
+    --form-border-color: #ccc;
+    --form-focus-border-color: #007BFF;
+    --form-hover-bg-color: #0056b3;
+    --error-color: red;
+    --input-padding: 10px;
+    --button-padding: 10px 15px;
+    --form-width: 100%;
+    --form-max-width: 300px;
+    --gap: 10px;
+    --error-margin-top: 5px;
+    --transition-speed: 0.3s;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--input-padding);
+}
+
+form {
+    display: grid;
+    gap: var(--gap);
+    width: var(--form-width);
+    max-width: var(--form-max-width);
+}
+
+input, textarea {
+    padding: var(--input-padding);
+    border: 1px solid var(--form-border-color);
+    border-radius: 5px;
+    transition: border-color var(--transition-speed);
+}
+
+input:focus, textarea:focus {
+    border-color: var(--form-focus-border-color);
+    outline: none;
+}
+
+button {
+    padding: var(--button-padding);
+    background-color: var(--form-bg-color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+
+button:hover {
+    background-color: var(--form-hover-bg-color);
+}
+
+span {
+    color: var(--error-color);
+    margin-top: var(--error-margin-top);
+    display: inline-block;
+}
