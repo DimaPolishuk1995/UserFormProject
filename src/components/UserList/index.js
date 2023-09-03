@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
 import './UserList.css';
 
 
@@ -22,7 +23,7 @@ const UserList = () => {
             </thead>
             <tbody>
             {userList.map((user, index) => (
-                <tr key={index}>
+                <tr key={uuidv4()}>
                     <td>{user.firstName}</td>
                     <td>{user.lastName}</td>
                     <td>{user.email}</td>
